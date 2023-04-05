@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="22dp"
+        android:text="Display"
+        app:layout_constraintBottom_toTopOf="@+id/edtfirst"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edtfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtsecond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdisplay" />
+
+    <EditText
+        android:id="@+id/edtsecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnadd"
+        app:layout_constraintStart_toStartOf="@+id/edtfirst"
+        app:layout_constraintTop_toBottomOf="@+id/edtfirst" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="32dp"
+        android:text="Simple Calculator"
+        app:layout_constraintBottom_toTopOf="@+id/txtdisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="115dp"
+        android:layout_height="43dp"
+        android:text="ADD"
+        app:layout_constraintBottom_toTopOf="@+id/btndivide"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/btndivide"
+        app:layout_constraintTop_toBottomOf="@+id/edtsecond" />
+
+    <Button
+        android:id="@+id/btnmultiply"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="22dp"
+        android:text="Multiply"
+        app:layout_constraintBottom_toTopOf="@+id/btnsubtract"
+        app:layout_constraintEnd_toEndOf="@+id/btnsubtract"
+        app:layout_constraintTop_toBottomOf="@+id/btndivide" />
+
+    <Button
+        android:id="@+id/btndivide"
+        android:layout_width="114dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="Divide"
+        app:layout_constraintBottom_toTopOf="@+id/btnmultiply"
+        app:layout_constraintEnd_toEndOf="@+id/btnmultiply"
+        app:layout_constraintStart_toStartOf="@+id/btnsubtract"
+        app:layout_constraintTop_toBottomOf="@+id/btnadd" />
+
+    <Button
+        android:id="@+id/btnsubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginBottom="240dp"
+        android:text="Subtract"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmultiply" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
